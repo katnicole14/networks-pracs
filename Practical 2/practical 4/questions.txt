@@ -1,0 +1,67 @@
+?The successor of IPv4 is:
+-TCP
+-Ethernet
+-IPv5
++IPv6
+-None of the above
+
+?DNS normally uses the following transport layer protocol
+-TCP
++UDP
+-IEEE 802.3
+-All of the above
+-None of the above
+
+?Which of the following is not a valid IP address?
+-192.168.1.256
+-10.0.0.1
+-172.16.256.1
++192.168.1.1
+
+?What does DNS stand for?
+-Dynamic Name Service
++Domain Name System
+-Data Network Security
+-Digital Network Signal
+
+?What port does HTTP typically use?
++80
+-21
+-443
+-22
+
+?Which protocol is used for secure communication over a computer network?
+-FTP
++SSL/TLS
+-SMTP
+-Telnet
+
+?What does DHCP stand for?
++Dynamic Host Configuration Protocol
+-Digital Hyper Control Protocol
+-Domain Host Control Protocol
+-Data Host Configuration Protocol
+
+?Which layer of the OSI model is responsible for routing and forwarding data?
+-Physical layer
+-Data Link layer
++Network layer
+-Transport layer
+
+?What type of cable is typically used to connect two network devices directly?
++Ethernet crossover cable
+-Coaxial cable
+-Fiber optic cable
+-Twisted pair cable
+
+?What is the default subnet mask for a Class C network?
+-255.0.0.0
+-255.255.0.0
++255.255.255.0
+-255.255.255.255
+
+?Which protocol is used for sending and receiving email over the Internet?
+-HTTP
+-FTP
+-SMTP
++IMAP

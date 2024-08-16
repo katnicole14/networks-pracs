@@ -1,0 +1,72 @@
+?What is the default port for HTTP communication?
+-Port 53
+-Port 80
+-Port 443
++Port 80
+-Port 8080
+?Which protocol is used for sending email?
+-FTP
+-SSH
++SMTP
+-HTTP
+?Which layer of the OSI model is responsible for logical addressing?
+-Physical layer
+-Network layer
+-Transport layer
+-Data link layer
+?Which protocol is used for secure web browsing?
+-FTP
+-HTTP
+-HTTPS
++HTTPS
+-SMTP
+?What is the maximum length of an IPv4 address in bits?
+-16 bits
+-32 bits
+-64 bits
++32 bits
+-128 bits
+?Which DNS record type is used to map domain names to IP addresses?
+-A record
+-MX record
+-NS record
++A record
+-CNAME record
+?Which protocol is used for file transfer over the internet?
+-HTTP
+-FTP
+-SSH
++FTP
+-SMTP
+?Which layer of the OSI model is responsible for reliable end-to-end communication?
+-Transport layer
+-Network layer
+-Physical layer
++Transport layer
+-Data link layer
+?Which protocol is used for real-time communication over the internet?
+-HTTP
+-FTP
+-SIP
++SIP
+-SMTP
+?Which DNS record type is used for mail server configuration?
+-A record
+-MX record
+-NS record
+-CNAME record
+?Which protocol is used for assigning dynamic IP addresses to devices on a network?
+-DNS
++DHCP
+-SNMP
+-FTP
+?What is the purpose of ARP (Address Resolution Protocol) in a computer network?
+-Routing data packets between networks
+-Encrypting network traffic
++Mapping IP addresses to MAC addresses
+-Allocating IP addresses to devices
+?Which OSI layer is responsible for establishing and terminating connections between devices?
++Transport Layer
+-Physical Layer
+-Data Link Layer
+-Session Layer

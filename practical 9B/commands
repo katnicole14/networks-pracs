@@ -1,0 +1,8 @@
+sudo service postfix start
+
+sudo service postfix status
+
+sudo service postfix restart
+
+sudo service postfix stop
+

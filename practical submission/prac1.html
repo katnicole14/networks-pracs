@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prac-1-homepage</title>
+    <style>
+
+        body {
+            background-color: #87CEEB;
+            color: #000;
+            font-family: 'Arial Black', sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #heading {
+            color: #00008B;
+            text-align: center;
+            margin-top: 50px;
+            font-style: italic;
+        }
+        #body {
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic;
+            font-family: 'Comic Sans MS', cursive;
+
+        }
+
+
+#button-1,
+#button-2 {
+    display: block;
+    margin: 0 auto;
+ background-color: #87CEEB;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    font-style: italic;
+}
+
+#button-1:hover,
+#button-2:hover {
+    background-color: #6495ED;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1 id="heading"> Practical one </h1>
+       
+
+   <form action="/cgi-bin/next.cgi" method="GET">
+        <button type="submit">Fibonacci functionality</button>
+    </form>
+     <form action="/cgi-bin/previous.cgi" method="GET">
+        <button type="submit">Previous functionality</button>
+    </form>
+
+</body>
+</html>

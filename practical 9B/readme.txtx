@@ -1,0 +1,226 @@
+ WORK/COS 332/PRACTICALS/practical 9B$ sudo dpkg-reconfigure postfix
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)  
+debconf: falling back to frontend: Readline  
+invoke-rc.d: could not determine current runlevel
+ * Stopping Postfix Mail Transport Agent postfix                                   [ OK ] 
+Postfix Configuration
+---------------------
+
+Please select the mail server configuration  
+type that best meets your needs.
+
+ No configuration:
+  Should be chosen to leave the current      
+[More] 
+
+configuration unchanged.
+ Internet site:
+  Mail is sent and received directly using   
+SMTP.
+ Internet with smarthost:
+  Mail is received directly using SMTP or by 
+running a utility such
+  as fetchmail. Outgoing mail is sent using a
+[More] 
+
+smarthost.
+ Satellite system:
+  All mail is sent to another machine, called
+a 'smarthost', for delivery.
+ Local only:
+  The only delivered mail is the mail for    
+local users. There is no network.
+
+[More] 
+
+  1. No configuration
+  2. Internet Site
+  3. Internet with smarthost
+  4. Satellite system
+  5. Local only
+
+General type of mail configuration: 2
+
+
+The "mail name" is the domain name used to "qualify" _ALL_ mail 
+addresses without a domain name. This includes mail to and from      
+<root>: please do not make your machine send out mail from
+root@example.org unless root@example.org has told you to.
+
+This name will also be used by other programs. It should be the      
+[More] 
+
+single, fully qualified domain name (FQDN).
+
+Thus, if a mail address on the local host is foo@example.org, the    
+correct value for this option would be example.org.
+
+System mail name: mail.esprit.com
+
+
+Mail for the 'postmaster', 'root', and other system accounts needs to
+be redirected to the user account of the actual system administrator.
+
+If this value is left empty, such mail will be saved in
+/var/mail/nobody, which is not recommended.
+
+[More] 
+
+Mail is not delivered to external delivery agents as root.
+
+If you already have a /etc/aliases file and it does not have an entry
+for root, then you should add this entry.  Leave this blank to not   
+add one.
+
+Root and postmaster mail recipient: root
+
+
+Please give a comma-separated list of domains for which this machine 
+should consider itself the final destination. If this is a mail      
+domain gateway, you probably want to include the top-level domain.   
+
+Other destinations to accept mail for (blank for none): esprit.com, localhost.com ,localhost ,mail.esprit.com
+
+
+If synchronous updates are forced, then mail is processed more       
+slowly. If not forced, then there is a remote chance of losing some  
+mail if the system crashes at an inopportune time, and you are not   
+using a journaled filesystem (such as ext3).
+
+Force synchronous updates on mail queue? [yes/no] no
+
+
+Please specify the network blocks for which this host should relay 
+mail. The default is just the local host, which is needed by some    
+mail user agents. The default includes local host for both IPv4 and  
+IPv6. If just connecting via one IP version, the unused value(s) may 
+be removed.
+
+[More] 
+
+If this host is a smarthost for a block of machines, you need to     
+
+If this host is a smarthost for a block of machines, you need to
+
+specify the netblocks here, or mail will be rejected rather than
+
+relayed.
+
+To use the postfix default (which is based on the connected subnets),leave this blank.
+
+Local networks: 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 ,30.0.0.0/8
+
+
+Please specify the limit that Postfix should place on mailbox 
+files to prevent runaway software errors. A value of zero (0)   
+means no limit. The upstream default is 51200000.
+
+Mailbox size limit (bytes): 0
+
+
+Please choose the character that will be used to define a local 
+address extension.
+
+To not use address extensions, leave the string blank.
+
+Local address extension character: +
+
+
+By default, whichever Internet protocols are enabled on the     
+system at installation time will be used. You may override this 
+default with any of the following:
+
+ all : use both IPv4 and IPv6 addresses;
+ ipv6: listen only on IPv6 addresses;
+[More] 
+
+ ipv4: listen only on IPv4 addresses.
+
+  1. all  2. ipv6  3. ipv4
+
+Internet protocols to use: 3
+
+
+invoke-rc.d: could not determine current runlevel
+setting synchronous mail queue updates: false
+changing /etc/mailname to mail.esprit.com
+setting myorigin
+setting destinations: esprit.com, localhost.com ,localhost ,mail.esprit.com
+setting relayhost: 
+postconf: warning: /etc/postfix/main.cf: multiple entries for "relayhost"
+setting mynetworks: 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 ,30.0.0.0/8
+setting mailbox_size_limit: 0
+setting recipient_delimiter: +
+setting inet_interfaces: all
+setting inet_protocols: ipv4
+WARNING: /etc/aliases exists, but does not have a root alias.
+
+Postfix (main.cf) is now set up with the changes above.  If you need to make
+changes, edit /etc/postfix/main.cf (and others) as needed.  To view Postfix
+configuration values, see postconf(1).
+
+service postfix reload'.
+
+Running newaliases
+invoke-rc.d: could not determine current runlevel
+Processing triggers for libc-bin (2.27-3ubuntu1.6) ...
+
+
+
+from file
+
+smtpd_relay_restrictions = permit_mynetworks permit_sasl_au$myhostname = katnicole.localdomain
+alias_maps = hash:/etc/aliases
+alias_database = hash:/etc/aliases
+mydestination = esprit.com, localhost.com ,localhost ,mail.$relayhost =
+mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 ,$mailbox_size_limit = 0
+recipient_delimiter = +
+inet_interfaces = all
+inet_protocols = ipv4
+myorigin = /etc/mailname
+
+
+Enter PEM pass phrase: katnicole
+
+
+-----BEGIN CERTIFICATE-----
+MIIDeDCCAmCgAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjDELMAkGA1UEBhMCWkEx
+EDAOBgNVBAgMB0dhdXRlbmcxETAPBgNVBAcMCFByZXRvcmlhMRIwEAYDVQQKDAlr
+YXRuaWNvbGUxEjAQBgNVBAsMCWthdG5pY29sZTEQMA4GA1UEAwwHa2F0bGVnbzEe
+MBwGCSqGSIb3DQEJARYPcm9vdEBlc3ByaXQuY29tMB4XDTI0MDYwNDAyNDEyOVoX
+DTI1MDYwNDAyNDEyOVoweTELMAkGA1UEBhMCWkExEDAOBgNVBAgMB0dhdXRlbmcx
+EjAQBgNVBAoMCWthdG5pY29sZTESMBAGA1UECwwJa2F0bmljb2xlMRAwDgYDVQQD
+DAdrYXRsZWdvMR4wHAYJKoZIhvcNAQkBFg9yb290QGVzcHJpdC5jb20wgZ8wDQYJ
+KoZIhvcNAQEBBQADgY0AMIGJAoGBAJWjH0fToSmcYNwgUlVhq1egPJdl5fr7Fc7M
+h2sJnJPq80Rm70XBzW4FKCtI8ZB+iS6ZqNTGDZyOHucFaZtMhtOSXvp034o5ZJme
+sONQAxn1SAvXtVUQjRyq8WZLNju5xNYCkpSGuYDioi9OVjRLdI3TmoTW+Rt9LsPl
+kA8y6Yl9AgMBAAGjezB5MAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHU9wZW5T
+U0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBSOvEEIZNQvN8QVvfOd
+SpfzsPs1LDAfBgNVHSMEGDAWgBS2WNAzVEnUK38d1j6QKIsgmfaQzTANBgkqhkiG
+9w0BAQsFAAOCAQEAOCNtp2TxwI4/qPBaXPKsAr4rhDBnqbWI6G/3lzS7cOSP2KTC
+gVc4hwfTzkbYZgdqAtXAosVbkg794LuH+RjW6fxDDzB8+YgkpmRVYqYrdoF/vrk6
+im/hJzvJJV/usEp3gQYOBRMjIU3vSspdXO6LQNt+YWjDoUSfbfCrTxWshoc2SYJB
+mPm+Aqey0Vb6Lidt1ERtKFU/aGaYMZF5DRQbcHqRPeIB6IKDtSAAcXduyE06/ZV9
+vtyweBYFpBTv7yybF9mWubbBUzIHLliFqdViYMJwPvNXshVxq3lGhWS3ZcyBEitS
+0hY/WVr+REfhreTHWQly2BdPVr3oDIjQ09nCaA==
+-----END CERTIFICATE-----
+
+
+
+
+# This file was automatically generated by WSL. To stop automatic ge$
+# [network]
+# generateHosts = false
+127.0.0.1       localhost
+127.0.0.1       mail.esprit.com
+127.0.1.1       katnicole.localdomain   katnicole
+0.0.0.1 scinstallcheck.mcafee.com
+0.0.0.1 mssplus.mcafee.com
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
