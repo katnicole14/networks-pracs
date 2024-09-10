@@ -118,8 +118,8 @@ def send_warning_email(username, password, bcc_recipient):
 def main():
     pop_server = 'pop.gmail.com'
     pop_port = 995
-    username = 'u22543946@tuks.co.za'
-    password = 'mxcjoptjkqmolevp'
+    username = ''
+    password = ''
 
     pop_conn = connect_to_pop3_server(pop_server, pop_port)
     retrieve_emails(pop_conn, username, password)

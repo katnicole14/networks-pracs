@@ -8,11 +8,11 @@ PROXY_PORT = 55555
 REAL_POP3_SERVER = 'pop.gmail.com'
 REAL_POP3_PORT = 995 
 # Proxy credentials (used by employees to connect to the proxy)
-PROXY_USERNAME = 'employee'
-PROXY_PASSWORD = 'employee_password'
+PROXY_USERNAME = ''
+PROXY_PASSWORD = ''
 # Real POP3 server credentials (used by the proxy to connect to the POP3 server)
-REAL_POP3_USERNAME = 'u22543946@tuks.co.za'
-REAL_POP3_PASSWORD = 'mxcjoptjkqmolevp'
+REAL_POP3_USERNAME = ''
+REAL_POP3_PASSWORD = ''
 
 def handle_client(client_socket):
     try:

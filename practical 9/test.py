@@ -11,11 +11,11 @@ REAL_SMTP_SERVER = 'smtp.gmail.com'
 REAL_SMTP_PORT = 465 
 REAL_POP3_PORT = 995 
 # Proxy credentials (used by employees to connect to the proxy)
-PROXY_USERNAME = 'u22543946@tuks.co.za'
-PROXY_PASSWORD = 'mxcjoptjkqmolevp'
+PROXY_USERNAME = ''
+PROXY_PASSWORD = ''
 # Real POP3 server credentials (used by the proxy to connect to the POP3 server)
-REAL_POP3_USERNAME = 'u22543946@tuks.co.za'
-REAL_POP3_PASSWORD = 'mxcjoptjkqmolevp'
+REAL_POP3_USERNAME = ''
+REAL_POP3_PASSWORD = ''
 
 username =REAL_POP3_USERNAME
 password =REAL_POP3_PASSWORD

@@ -33,8 +33,8 @@ import base64
 # POP3 server settings
 POP3_SERVER = 'pop.gmail.com'
 POP3_PORT = 995 
-USERNAME = 'u22543946@tuks.co.za'
-PASSWORD = 'mxcjoptjkqmolevp'
+USERNAME = ''
+PASSWORD = ''
 
 
 WARNING_SUBJECT = '[BCC Warning]'

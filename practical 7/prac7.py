@@ -7,12 +7,12 @@ from email.mime.text import MIMEText
 # POP3 server settings
 POP3_SERVER = 'pop.gmail.com'
 POP3_PORT = 995  # Use port 995 for POP3 over SSL
-USERNAME = 'u22543946@tuks.co.za'
-PASSWORD = 'mxcjoptjkqmolevp'
+USERNAME = ''
+PASSWORD = ''
 
 # Email settings
-FROM_EMAIL = 'u22543946@tuks.co.za'
-TO_EMAIL = 'u22543946@tuks.co.za'
+FROM_EMAIL = ''
+TO_EMAIL = ''
 WARNING_SUBJECT = '[BCC Warning]'
 
 def send_warning_email(subject, body):

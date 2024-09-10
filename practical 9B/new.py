@@ -8,8 +8,8 @@ proxy_port = 55555
 # POP3 server details
 pop3_server = 'localhost'
 pop3_port = 110
-real_username = 'katnicole'
-real_password = 'katnicole14'
+real_username = ''
+real_password = ''
 
 # SMTP server details
 smtp_server = 'localhost'
@@ -17,9 +17,9 @@ smtp_port = 25
 
 # Authentication details for proxy users
 proxy_users = {
-    'user1@example.com': 'password1',
-    'user2@example.com': 'password2',
-    'user3@example.com': 'password3'
+    'user1@example.com': '',
+    'user2@example.com': '',
+    'user3@example.com': ''
 }
 delete_allowed_user = 'user2@example.com'
 
