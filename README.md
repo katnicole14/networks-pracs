@@ -1,1 +1,1 @@
-#computer networks-pracs
+#computer networks-practicals code 
